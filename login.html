@@ -30,28 +30,28 @@
 
  <section class="max-w-md min-h-screen mx-auto bg-gray-200">
     <header>
-        <nav class="mt-6 flex justify-center items-center">
+        <nav class="mt- flex justify-center items-center">
             <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
                 <img class="w-48 absulate" src="./assets/bg.png" alt="">
-                <img class="w-16" src="./assets/Group.png" alt="">
+                <img class="items-center w-16" src="./assets/Group.png" alt="">
             </div>
         </nav>
     </header>
 <!-- login section -->
- <div class="hero bg-base-200 min-h-screen">
+ <div class="hero bg-base-200 ">
   <div class="hero-content flex-col lg:flex-row-reverse">
    
     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-      <div class="card-body">
+      <form class="card-body">
         <fieldset class="fieldset">
-          <label class="label">Email</label>
-          <input type="email" class="input" placeholder="Email" />
-          <label class="label">Password</label>
-          <input type="password" class="input" placeholder="Password" />
+          <label class="label">Account number</label>
+          <input value="01964836483" id="Account-number" type="number" class="input" placeholder="Account number" required/>
+          <label class="label">PIN</label>
+          <input value="1234" id="pin" type="text" class="input" placeholder="type Your pin" required />
           <div><a class="link link-hover">Forgot password?</a></div>
-          <button class="btn btn-neutral mt-4">Login</button>
+          <button id="login-btn" class="btn w-full btn-neutral mt-4">Login</button>
         </fieldset>
-      </div>
+      </form>
     </div>
   </div>
 </div>
@@ -59,6 +59,8 @@
  </section>
 
 
+
+<script src="login.js"></script>
     
 </body>
 </html>
