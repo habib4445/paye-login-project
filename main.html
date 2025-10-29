@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main</title>
     <!-- daisyUi cdn -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -28,18 +28,95 @@
 </head>
 <body class="bg-slate-800">
 
- <section class="max-w-md min-h-screen mx-auto bg-gray-200">
+ <section class="max-w-md py-6 min-h-screen mx-auto bg-gray-200">
    <header>
-    <nav >
+    <nav class="flex justify-around items-center" >
         <img class="w-16" src="./assets/Group.png" alt="">
-        <div class="flex justify-around items-center">
-            <h1>$ 4500</h1>
-            <p>available balance</p>
+        <div >
+            <h1 class="text-3xl font-bold">$ 4500</h1>
+            <p class="border rounded p-1">available balance</p>
         </div>
+        <button class="btn">Logout</button>
     </nav>
-   </header>
+    <!-- Welcome section -->
+<section class="mt-10">
+<h1 class="text-2xl font-bold mb-2">Welcome to Payooo!</h1>
+<p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+<!-- card 1 -->
+<div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
+    <div class="box border bg-base-100 p-4 text-center rounded-sm">
+        <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
+        <h3>Add Money</h3>
+    </div>
 
+     <div class="box border bg-base-100 p-4 text-center rounded-sm">
+        <img class="w-8 mx-auto" src="./assets/purse1.png" alt="">
+        <h3>Cashout</h3>
+    </div>
+
+     <div class="box border bg-base-100 p-4 text-center rounded-sm">
+        <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
+        <h3>Transfer Money</h3>
+    </div>
+
+</div>
+<!-- card 2 -->
+ <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
+    <div class="box border bg-base-100 p-4 text-center rounded-sm">
+        <img class="w-8 mx-auto" src="./assets/bonus1.png" alt="">
+        <h3>Get Bonus</h3>
+    </div>
+
+     <div class="box border bg-base-100 p-4 text-center rounded-sm">
+        <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
+        <h3>Pay Bill</h3>
+    </div>
+
+     <div class="box border bg-base-100 p-4 text-center rounded-sm">
+        <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="">
+        <h3>Transaction</h3>
+    </div>
+
+</div>
+</section>
+<!-- add money section -->
+<section>
+<h1>Add Money</h1>
+
+<div class="">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+   
+    <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <!-- select -->
+         <legend>Select Bank</legend>
+         <select class="select">
+  <option disabled selected>Pick a color</option>
+  <option value="Bkash">Bkash</option>
+  <option value="Nagad">Nagad</option>
+  <option value="UCB">UCB</option>
+</select>
+
+
+        <fieldset class="fieldset">
+          <label class="label">Email</label>
+          <input type="email" class="input" placeholder="Email" />
+          <label class="label">Password</label>
+          <input type="password" class="input" placeholder="Password" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button class="btn btn-neutral mt-4">Login</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+   </header>
  </section>
+
+
 
 
 
