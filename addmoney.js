@@ -14,7 +14,7 @@ if(convertedPin===1234){
 
 }
 else{
-    console.log("pin thik nai");
+    alert('Enter a valid pin');
 }
 
 })
