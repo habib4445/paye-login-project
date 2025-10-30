@@ -33,10 +33,10 @@
     <nav class="flex justify-around items-center" >
         <img class="w-16" src="./assets/Group.png" alt="">
         <div >
-            <h1 class="text-3xl font-bold">$ 4500</h1>
+            <h1 class="text-3xl font-bold">$ <span id="main-balance">4500</span> </h1>
             <p class="border rounded p-1">available balance</p>
         </div>
-        <button class="btn">Logout</button>
+        <button class="btn bg-blue-700">Logout</button>
     </nav>
     <!-- Welcome section -->
 <section class="mt-10">
@@ -91,7 +91,7 @@
         <!-- select -->
          <legend>Select Bank</legend>
          <select class="select">
-  <option disabled selected>Pick a color</option>
+  <option disabled selected>Select Bank</option>
   <option value="Bkash">Bkash</option>
   <option value="Nagad">Nagad</option>
   <option value="UCB">UCB</option>
@@ -99,12 +99,15 @@
 
 
         <fieldset class="fieldset">
-          <label class="label">Email</label>
-          <input type="email" class="input" placeholder="Email" />
-          <label class="label">Password</label>
-          <input type="password" class="input" placeholder="Password" />
+          <label class="label">Number</label>
+          <input value="01964836483" id="Account-number" type="number" class="input" placeholder="Account number" required/>
+          <label class="label">PIN</label>
+          <input value="1234" id="pin" type="text" class="input" placeholder="type Your pin" required />
+          
+           <label class="label">Enter Amount</label>
+          <input  id="amount" type="number" class="input" placeholder="Enter Amount" required/>
           <div><a class="link link-hover">Forgot password?</a></div>
-          <button class="btn btn-neutral mt-4">Login</button>
+          <button id="add-money" class="btn border-none bg-blue-700 btn-neutral mt-4">Add money</button>
         </fieldset>
       </div>
     </div>
@@ -121,6 +124,6 @@
 
 
 <script src="login.js"></script>
-    
+    <script src="./addmoney.js"></script>
 </body>
 </html>
